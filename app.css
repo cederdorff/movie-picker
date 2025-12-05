@@ -5,3 +5,59 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f0f0f0;
 }
+
+h1 {
+  text-align: center;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+/* Movie Grid Styles */
+#movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+  gap: 1rem;
+}
+
+.movie-poster {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.movie-poster:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Selected Movie Styles */
+#selected-movie {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  padding: 2rem;
+  margin: 0 0 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#selected-movie img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+#selected-movie h2 {
+  margin-top: 0;
+}
